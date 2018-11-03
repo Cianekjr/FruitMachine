@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fruit Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1>Fruit Machine</h1>
+    </header>
+    <section class="cards">
+      <div class="fruit"></div>
+      <div class="fruit"></div>
+      <div class="fruit"></div>
+    </section>
+    <section class="play">
+      <input type="number" placeholder="Bid" id="bid">
+      <button id="start">Play!</button>
+    </section>
+    <section class="panel">
+      <p>Own resources: <span class="wallet"></span></p>
+    </section>
+    <section class="score">
+      <p>Plays: <span class="plays"></span></p>
+      <p>Wins: <span class="wins"></span></p>
+      <p>Losses: <span class="losses"></span></p>
+    </section>
+    <div class="result active"></div>
+  </div>
+
+  <script src="Wallet.js"></script>
+  <script src="Statistics.js"></script>
+  <script src="Draw.js"></script>
+  <script src="Result.js"></script>
+  <script src="Game.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

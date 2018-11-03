@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #A9E8DC;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  background-color: #02547D;
+  border-radius: 20px;
+}
+
+.header {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: flex;
+  flex-basis: 40%;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.cards .fruit {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url('img/cherry.jpg'); */
+}
+
+.fruit {
+  width: 25%;
+  margin: 20px;
+  box-shadow: 0 0 4px black;
+}
+
+.play {
+  margin: 20px;
+}
+
+#bid,
+#start {
+  height: 40px;
+  font-size: 30px;
+}
+
+#bid {
+  width: 220px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#start {
+  width: 100px;
+  background-color: #721825;
+  color: #aaa;
+  box-shadow: 0 0 10px black;
+  border: none;
+}
+
+#start:hover {
+  background-color: #A9E8DC;
+  color: #721825;
+}
+
+.panel,
+.score {
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+.wallet,
+.result,
+.plays,
+.wins,
+.losses {
+  font-weight: bold;
+}
+
+.result {
+  display: none;
+}
+
+.result.active {
+  display: block;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 100px;
+  transition: 1s;
+}
